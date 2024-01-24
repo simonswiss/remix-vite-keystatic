@@ -17,7 +17,7 @@ export async function loader() {
 export default function Index() {
   const { posts } = useLoaderData<typeof loader>()
   return (
-    <main className="mx-auto max-w-7xl px-4 py-16">
+    <main className="mx-auto max-w-3xl px-4 py-16">
       <h1 className="text-2xl font-medium">
         Remix with Vite, MDX and Keystatic
       </h1>
