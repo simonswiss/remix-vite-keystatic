@@ -1,16 +1,12 @@
 ---
 title: My very first post with Remix, Vite, Keystatic and MDX
-publishedDate: "2024-01-24"
+publishedDate: '2024-01-24'
 ---
-
 This post is powered by the experimental MDX field in Keystatic. Go ahead and [edit it in the Admin UI](/keystatic/collection/posts/item/my-very-first-post-with-remix-vite-keystatic-and-mdx).
 
 ## Let's try a Card component
 
-<Card
-  title="This is my first card"
-  body="Whoaaaa, this is actually pretty cool! This card has no image."
-/>
+<Card title="Editing MDX from Keystatic" body="Whoaaaa, this is actually pretty cool! This card has no image." />
 
 This is a custom `Card` MDX component below. The code output looks like this:
 
@@ -23,22 +19,19 @@ This is a custom `Card` MDX component below. The code output looks like this:
 
 A `Card` can also have an optional image (stored on the file system via Keystatic):
 
-<Card
-  image="/images/posts/my-very-first-post-with-remix-vite-keystatic-and-mdx/20220404_072620.jpg"
-  title="Another card"
-  body="Yesssssss, let's go"
-/>
+<Card image="/images/posts/my-very-first-post-with-remix-vite-keystatic-and-mdx/20220404_072620.jpg" title="Another card" body="Yesssssss, let's go" />
 
 ## How about an inline stack of cards?
 
 <InlineStack gap={24}>
-  <Card
-    title="My first card"
-    body="This is the first card. Those will wrap inside the inline-stack."
-  />
+  <Card title="Stacks are cool" body="This is the first card. Those will wrap inside the inline-stack." />
+
   <Card title="Another card" body="Yesssssss, let's go" />
+
   <Card title="I can go on all day" body="You get the idea" />
+
   <Card title="One more" body="I think this is pretty cool." />
+
   <Card title="Okay one last one" body="Yesssssss, let's go" />
 </InlineStack>
 
@@ -53,3 +46,28 @@ A `wrapper` component is used for these, with multiple `Card` component `blocks`
   <Card title="Okay one last one" body="Yesssssss, let's go" />
 </InlineStack>
 ```
+
+
+
+<Card image="/images/posts/my-very-first-post-with-remix-vite-keystatic-and-mdx/ankles.jpeg" title="The UX/UI will change, but... it already works!" body="This is the card content." />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

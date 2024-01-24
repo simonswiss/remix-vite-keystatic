@@ -9,7 +9,11 @@ import { getMDXComponent } from "mdx-bundler/client"
 import { Card } from "~/components/Card"
 import { InlineStack } from "~/components/InlineStack"
 
-export async function loader({ params: { slug } }) {
+export async function loader({
+  params: { slug },
+}: {
+  params: { slug: string }
+}) {
   const post = await reader.collections.posts.read(slug, {
     resolveLinkedFiles: true,
   })
